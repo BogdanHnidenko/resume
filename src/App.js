@@ -43,7 +43,7 @@ function App() {
 			<ThemeProvider theme={darkTheme ? themeDark : themeLight}>
 				<DivWrapper className="wrapper">
 					{loading ? <div class="lds-ring"><div></div><div></div><div></div><div></div></div> :
-						<BrowserRouter basename='/home'>
+						<BrowserRouter basename='/resume'>
 							<header className='header'>
 								<div className="header__container">
 									<div className='header__button'>
@@ -82,7 +82,7 @@ function App() {
 							<main className='main'>
 								<Provider store={storeWorks}>
 									<Routes>
-										<Route path='/home' element={<Home />} />
+										<Route path='/' element={<Home />} />
 										<Route path='/works' element={<Works />} />
 										<Route path='/skills' element={<Provider store={storeSkills}><Skills /></Provider>} />
 										<Route path='/contacts' element={<Contacts />} />

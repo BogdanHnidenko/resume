@@ -2,6 +2,8 @@ import calc from '../img/works/calc.png';
 import redux from '../img/works/redux.png';
 import signIn from '../img/works/sign-in.png';
 import snake from '../img/works/snake.png';
+import beautyness from '../img/works/beautyness.png';
+
 
 
 const initialState = {
@@ -40,6 +42,14 @@ const initialState = {
 			text: 'An example of a snake game using HTML, CSS, and JavaScript',
 			textUA: "Приклад гри змійка, з використанням HTML, CSS, JavaScript",
 			link: 'https://bogdanhnidenko.github.io/myWork/Snake_game/',
+		},
+		{
+			title: 'Beauty Salon Website',
+			titleUA: 'Сайт Салону Краси',
+			photo: beautyness,
+			text: "This website example is implemented using HTML, CSS, JavaScript, and the SCSS preprocessor. The showcased work is fully responsive for any devices.",
+			textUA: "Приклад данного сайту реалізовано за допомогою HTML, CSS, JavaScript, та препроцессора SCSS. Представлена робота повністю адаптивна під будь-які пристрої.",
+			link: 'https://bogdanhnidenko.github.io/forExample/home/',
 		}
 	]
 }

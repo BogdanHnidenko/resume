@@ -6,6 +6,8 @@ import gitPhoto from '../img/skills/git.png';
 import reactPhoto from '../img/skills/react.png';
 import reduxPhoto from '../img/skills/redux.png';
 import figmaPhoto from '../img/skills/figma.png';
+import vuePhoto from '../img/skills/vue.png';
+
 
 const initialState = {
 	skills: [
@@ -38,6 +40,11 @@ const initialState = {
 			name: 'React.JS',
 			photo: reactPhoto,
 			level: 3
+		},
+		{
+			name: 'Vue.js',
+			photo: vuePhoto,
+			level: 4
 		},
 		{
 			name: 'Redux',

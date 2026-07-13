@@ -1,0 +1,11 @@
+@use '../../styles/mixins' as m;
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+
+  @include m.mobile {
+    grid-template-columns: 1fr;
+  }
+}

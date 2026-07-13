@@ -1,0 +1,46 @@
+// Typography
+$font-heading: 'Space Grotesk', sans-serif;
+$font-body: 'Inter', sans-serif;
+$font-mono: 'JetBrains Mono', monospace;
+
+// Radii
+$radius-sm: 2px;
+$radius-md: 3px;
+$radius-circle: 50%;
+
+// Layout
+$max-width: 1180px;
+$side-padding: 32px;
+$section-padding-y: 88px;
+$breakpoint-mobile: 860px;
+
+// Light theme tokens
+$light-bg: #F5F4F0;
+$light-fg: #141414;
+$light-secondary: #4a4740;
+$light-card-bg: #FFFFFF;
+$light-nav-bg: rgba(245, 244, 240, 0.92);
+$light-border-soft: rgba(20, 20, 20, 0.12);
+$light-border-med: rgba(20, 20, 20, 0.15);
+$light-border-strong: rgba(20, 20, 20, 0.25);
+$light-photo-stripe: repeating-linear-gradient(135deg, #E7E4DC, #E7E4DC 10px, #DEDACF 10px, #DEDACF 20px);
+
+// Dark theme tokens
+$dark-bg: #222222;
+$dark-fg: #F0EEE9;
+$dark-secondary: #B8B4AA;
+$dark-card-bg: #1D1D1B;
+$dark-nav-bg: rgba(20, 20, 20, 0.92);
+$dark-border-soft: rgba(240, 238, 233, 0.12);
+$dark-border-med: rgba(240, 238, 233, 0.18);
+$dark-border-strong: rgba(240, 238, 233, 0.3);
+$dark-photo-stripe: repeating-linear-gradient(135deg, #242422, #242422 10px, #2B2B28 10px, #2B2B28 20px);
+
+// Shared
+$muted: #8A8578;
+
+// Accent presets
+$accent-rust: #B5502E;
+$accent-slate: #3D5A6C;
+$accent-olive: #5B6B4C;
+$accent-black: #141414;

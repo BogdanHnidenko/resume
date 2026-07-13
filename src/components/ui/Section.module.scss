@@ -1,0 +1,18 @@
+@use '../../styles/mixins' as m;
+@use '../../styles/variables' as v;
+
+.section {
+  border-top: 1px solid var(--border-soft);
+}
+
+.inner {
+  @include m.container;
+  padding-top: v.$section-padding-y;
+  padding-bottom: v.$section-padding-y;
+}
+
+.inverted {
+  background: var(--contrast-bg);
+  color: var(--contrast-fg);
+  border-top-color: var(--contrast-border);
+}

@@ -1,0 +1,17 @@
+@use '../../styles/mixins' as m;
+
+.heading {
+  display: flex;
+  gap: 18px;
+  align-items: baseline;
+  margin-bottom: 48px;
+}
+
+.number {
+  @include m.mono(13px);
+  color: var(--accent-color);
+}
+
+.title {
+  @include m.heading(34px, 700);
+}

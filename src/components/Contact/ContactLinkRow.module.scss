@@ -1,0 +1,38 @@
+@use '../../styles/mixins' as m;
+@use '../../styles/variables' as v;
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid var(--contrast-border);
+  border-radius: v.$radius-md;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+
+  &:hover {
+    border-color: var(--accent-color);
+    background: var(--contrast-border);
+    transform: translateY(-2px);
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.label {
+  @include m.mono(11px);
+  color: var(--contrast-muted);
+  letter-spacing: 0.04em;
+}
+
+.value {
+  font-size: 15px;
+  font-weight: 500;
+  word-break: break-word;
+}

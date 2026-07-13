@@ -1,0 +1,25 @@
+@use '../../styles/mixins' as m;
+
+.switcher {
+  display: flex;
+  border: 1px solid var(--border-med);
+  border-radius: 20px;
+  overflow: hidden;
+  @include m.mono(12px);
+}
+
+.option {
+  border: none;
+  padding: 6px 12px;
+  background: transparent;
+  color: var(--secondary);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.active {
+  background: var(--fg);
+  color: var(--bg);
+}

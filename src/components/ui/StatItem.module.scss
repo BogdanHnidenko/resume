@@ -1,0 +1,19 @@
+@use '../../styles/mixins' as m;
+
+.stat {
+  padding: 20px 16px 0;
+}
+
+.bordered {
+  border-right: 1px solid var(--border-med);
+}
+
+.value {
+  @include m.heading(32px, 700);
+}
+
+.label {
+  @include m.mono(11px);
+  color: var(--secondary);
+  margin-top: 6px;
+}

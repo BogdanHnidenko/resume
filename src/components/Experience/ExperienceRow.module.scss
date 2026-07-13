@@ -1,0 +1,49 @@
+@use '../../styles/mixins' as m;
+@use '../../styles/variables' as v;
+
+.row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border-soft);
+
+  @include m.mobile {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
+.period {
+  @include m.mono(13px);
+  color: var(--muted);
+}
+
+.titleRow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.role {
+  font-family: v.$font-heading;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 0;
+}
+
+.company {
+  font-size: 14px;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--secondary);
+  margin: 0;
+  max-width: 600px;
+}

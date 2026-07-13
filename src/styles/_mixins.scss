@@ -1,0 +1,49 @@
+@use 'variables' as v;
+
+@mixin container {
+  max-width: v.$max-width;
+  margin: 0 auto;
+  padding: 0 v.$side-padding;
+}
+
+@mixin section-padding {
+  padding: v.$section-padding-y v.$side-padding;
+}
+
+@mixin mono($size: 13px) {
+  font-family: v.$font-mono;
+  font-size: $size;
+}
+
+@mixin heading($size: 34px, $weight: 700) {
+  font-family: v.$font-heading;
+  font-weight: $weight;
+  font-size: $size;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+@mixin mobile {
+  @media (max-width: v.$breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin underline-hover {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: var(--accent-color);
+    transition: width 0.25s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+@use '../../styles/mixins' as m;
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @include m.mono(13px);
+  color: var(--accent-color);
+  margin-bottom: 22px;
+}
+
+.line {
+  width: 26px;
+  height: 1px;
+  background: var(--accent-color);
+}

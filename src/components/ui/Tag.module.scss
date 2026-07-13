@@ -1,0 +1,33 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.tag {
+  @include m.mono();
+  border: 1px solid var(--border-med);
+  border-radius: v.$radius-sm;
+  color: var(--fg);
+  display: inline-block;
+}
+
+.md {
+  font-size: 13px;
+  padding: 8px 14px;
+}
+
+.sm {
+  font-size: 11px;
+  padding: 5px 10px;
+  background: var(--bg);
+  border-color: var(--border-soft);
+  color: var(--secondary);
+}
+
+.interactive {
+  transition: border-color 0.2s ease, color 0.2s ease;
+  cursor: default;
+
+  &:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}

@@ -1,0 +1,75 @@
+@use 'variables' as v;
+
+:root,
+[data-theme='light'] {
+  --bg: #{v.$light-bg};
+  --fg: #{v.$light-fg};
+  --secondary: #{v.$light-secondary};
+  --muted: #{v.$muted};
+  --card-bg: #{v.$light-card-bg};
+  --nav-bg: #{v.$light-nav-bg};
+  --border-soft: #{v.$light-border-soft};
+  --border-med: #{v.$light-border-med};
+  --border-strong: #{v.$light-border-strong};
+  --photo-stripe: #{v.$light-photo-stripe};
+
+  --contrast-bg: #{v.$dark-bg};
+  --contrast-fg: #{v.$dark-fg};
+  --contrast-secondary: rgba(245, 244, 240, 0.75);
+  --contrast-muted: rgba(245, 244, 240, 0.5);
+  --contrast-border: rgba(245, 244, 240, 0.15);
+  --contrast-border-strong: rgba(245, 244, 240, 0.3);
+}
+
+[data-theme='dark'] {
+  --bg: #{v.$dark-bg};
+  --fg: #{v.$dark-fg};
+  --secondary: #{v.$dark-secondary};
+  --muted: #{v.$muted};
+  --card-bg: #{v.$dark-card-bg};
+  --nav-bg: #{v.$dark-nav-bg};
+  --border-soft: #{v.$dark-border-soft};
+  --border-med: #{v.$dark-border-med};
+  --border-strong: #{v.$dark-border-strong};
+  --photo-stripe: #{v.$dark-photo-stripe};
+
+  --contrast-bg: #{v.$light-bg};
+  --contrast-fg: #{v.$light-fg};
+  --contrast-secondary: rgba(20, 20, 20, 0.7);
+  --contrast-muted: rgba(20, 20, 20, 0.5);
+  --contrast-border: rgba(20, 20, 20, 0.15);
+  --contrast-border-strong: rgba(20, 20, 20, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: v.$font-body;
+  color: var(--fg);
+  background: var(--bg);
+  transition: background 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  font-family: v.$font-body;
+}
+
+::selection {
+  background: var(--accent-color, #{v.$accent-rust});
+  color: var(--bg);
+}

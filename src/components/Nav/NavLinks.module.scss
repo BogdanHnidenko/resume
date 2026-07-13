@@ -1,0 +1,14 @@
+@use '../../styles/mixins' as m;
+@use '../../styles/variables' as v;
+
+.links {
+  display: flex;
+  gap: 28px;
+  @include m.mono(13px);
+  color: var(--secondary);
+  flex: 1;
+
+  @include m.mobile {
+    display: none;
+  }
+}

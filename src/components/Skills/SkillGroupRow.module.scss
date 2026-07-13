@@ -1,0 +1,20 @@
+@use '../../styles/mixins' as m;
+
+.row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.label {
+  @include m.mono(13px);
+  color: var(--muted);
+  padding-top: 8px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
